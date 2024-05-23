@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Request Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+
+<body>
+
+    <h2>Service Request Form</h2>
+
+    <form name="Service Request Form" action="submit.html" method="post" netlify>
+        <div class="input-wrapper">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" placeholder="Today's Date">
+        </div>
+        <div class="input-wrapper">
+            <label for="customer_name">Customer Name:</label>
+            <input type="text" id="customer_name" name="customer_name" placeholder="Company Name">
+        </div>
+        <div class="input-wrapper">
+            <label for="items">Equipment:</label>
+        </div>
+        <div id="items">
+            <div>
+                <input type="text" name="item[]" placeholder="Equipment Type">
+
+                <!-- End -->
+                </select>
+                <input type="text" name="lot[]" placeholder="Asset Number">
+                <input type="text" name="reason[]" placeholder="What is going on with it?">
+            </div>
+        </div>
+        <div class="input-wrapper">
+            <button type="button" onclick="addItem()">Add Item</button>
+
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function addItem() {
+            var itemsDiv = document.getElementById('items');
+            var newItemDiv = document.createElement('div');
+            newItemDiv.innerHTML = '<input type="text" name="item[]" placeholder="Equipment Type">' +
+                '<input type="text" name="lot[]" placeholder="Asset Number">' + '<input type="text" name="reason[]" placeholder="What is going on with it?">';
+            itemsDiv.appendChild(newItemDiv);
+        }
+    </script>
+
+</body>
+
+</html>

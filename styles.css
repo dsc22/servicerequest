@@ -1,0 +1,170 @@
+/* Enclosing white box */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title */
+h2 {
+    color: #333;
+    text-align: center; /* Center the form title */
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Text input styles */
+input[type="text"],
+input[type="date"], textarea {
+    width: 175px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[name="ship_from_city"] {
+    width: 100px; /* Set width of City input to 100px */
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[name="ship_from_state"] {
+    width: 35px; /* Set width of State input to 65px */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[name="ship_from_zip"] {
+    width: 65px; /* Set width of Zip Code input to 85px */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="date"] {
+    width: 110px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Dropdown styles */
+select {
+    width: 65px;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styles for items container */
+#items {
+    margin-bottom: 5px;
+    text-align: center; /* Center the items container */
+}
+
+/* Additional styles for item container */
+#items div {
+    margin-bottom: 5px;
+    margin: 0 auto; /* Center the item container */
+}
+
+/* Additional styles for reason input */
+input[name="reason[]"] {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 3px;
+    resize: vertical;
+}
+
+input[name="item[]"] {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+/* Additional styles for form submission */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Center the submit button */
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Centering input fields */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[name="order_number[]"] {
+    width: 40px; /* Set width of Order # input to match the item input */
+}
+
+.textarea-field {
+    width: 70px;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+textarea {
+    width: 100px;
+    height: 40px;
+     /* Set width of Order # input to match the item input */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[name="lot[]"] {
+    width: 110px; /* Set width of Order # input to match the item input */
+}
